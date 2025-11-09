@@ -9,7 +9,7 @@ var motion:Vector2
 
 var target:Node2D
 
-onready var sprite = $Sprites
+onready var sprite = $Sprite
 
 func _physics_process(delta):
 	motion.y+=GRAVITY*delta
