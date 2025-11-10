@@ -11,6 +11,7 @@ extents = Vector2( 10, 5 )
 
 [node name="Ladder" type="Sprite"]
 position = Vector2( 10, 120 )
+z_index = -10
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
 

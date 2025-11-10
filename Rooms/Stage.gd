@@ -28,8 +28,3 @@ func spawn_wave():
 			spawn=Vector2(anchor+(randi()%30),(lane*4) - 1)
 		spawn_list.append(spawn)
 		spawn_enemy(spawn)
-
-func _process(_delta):
-	if Input.is_action_just_pressed("grab"):
-		var prime_pos=block_map.world_to_map(player.position)
-		block_map.make_hall(Vector2(get_anchor()+30,0))

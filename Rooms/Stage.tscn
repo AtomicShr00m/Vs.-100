@@ -70,5 +70,3 @@ position = Vector2( 130, 200 )
 
 [node name="Ladder3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 450, 120 )
-
-[connection signal="body_exited" from="Cam/CamCheck" to="BlockMap" method="_on_CamCheck_body_exited"]
