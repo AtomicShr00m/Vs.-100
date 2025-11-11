@@ -54,6 +54,7 @@ process_mode = 0
 smoothing_enabled = true
 
 [node name="CamCheck" type="Area2D" parent="Cam"]
+visible = false
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cam/CamCheck"]
