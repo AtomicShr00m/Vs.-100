@@ -12,6 +12,7 @@ func _ready():
 func spawn_enemy(tile):
 	var enemy=blueScn.instance()
 	enemy.position=block_map.map_to_world(tile)+Vector2(10,10)
+	enemy.get_node("Sprite").scale.x=[-1,1].pick_random()
 	enemy.target=player
 	add_child(enemy)
 

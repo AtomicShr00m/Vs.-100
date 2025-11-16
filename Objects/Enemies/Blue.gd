@@ -7,7 +7,6 @@ const GRAVITY=700
 
 var motion:Vector2
 var dir:=0
-var safe_nodes:=[]
 
 var target:Node2D
 
@@ -20,7 +19,6 @@ onready var bullet_spawn = $Sprite/Head/ArmR/BulletSpawn
 onready var bulletScn = preload("res://Objects/Enemies/Bullets/BulletBlue.tscn")
 
 func hit():
-	get_tree().paused=true
 	queue_free()
 
 func _ready():
